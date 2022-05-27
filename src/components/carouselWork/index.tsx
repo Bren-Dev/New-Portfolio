@@ -21,6 +21,15 @@ export default class CarouselWork extends Component {
             slidesToScroll: 1,
           },
         },
+        {
+          breakpoint: 425,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: false,
+          },
+        },
       ],
     };
     return (

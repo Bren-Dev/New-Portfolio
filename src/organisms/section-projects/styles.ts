@@ -1,7 +1,9 @@
 import styled from "styled-components";
 const background = require("../../assets/Background.png") as string;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  margin-top: 40vh;
+`;
 
 export const DivRectangle = styled.div`
   @media (max-width: 600px) {
