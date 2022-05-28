@@ -41,7 +41,13 @@ export default function Header() {
           <S.DivTypeWriter>{text}</S.DivTypeWriter>
 
           <S.DivButton>
-            <S.ButtonResume>Resume</S.ButtonResume>
+            <a
+              href="https://drive.google.com/file/d/1Qqq1ow0gjAI1RSULOSxVjBeNYJ9Ke2j7/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <S.ButtonResume>Resume</S.ButtonResume>
+            </a>
           </S.DivButton>
         </S.DivPresentation>
         <S.DivImg>

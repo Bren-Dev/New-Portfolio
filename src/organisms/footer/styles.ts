@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export const ContentDivForm = styled.div`
   display: flex;
@@ -10,6 +13,9 @@ export const ContentDivForm = styled.div`
   position: absolute;
   margin-left: 30vh;
   width: 70%;
+  @media (max-width: 768px) {
+    position: static;
+  }
 `;
 export const DivFinal = styled.div`
   width: 100%;
@@ -61,6 +67,10 @@ export const DivForm = styled.div`
     font-size: 15px;
     line-height: 21px;
     color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    background: none;
   }
 `;
 
