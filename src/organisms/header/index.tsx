@@ -3,6 +3,7 @@ import { LinkedinIcon } from "../../assets/icons/linkedin";
 import { useTypewriter } from "react-simple-typewriter";
 import * as S from "./styles";
 import { GithubIconTwo } from "../../assets/icons/githubTwo";
+import { DivVacuum } from "../main/styles";
 
 export default function Header() {
   const { text } = useTypewriter({
@@ -39,6 +40,7 @@ export default function Header() {
         </S.DivIcons>
       </S.Nav>
       <S.DivAllResume>
+        <DivVacuum />
         <S.DivResume>
           <S.DivPresentation>
             <S.HelloText>Hello I'm Brenda</S.HelloText>

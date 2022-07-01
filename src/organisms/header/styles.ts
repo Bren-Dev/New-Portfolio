@@ -77,8 +77,16 @@ export const ImgAvatar = styled.img.attrs({ src: avatar })`
   }
 `;
 
+export const DivAllResume = styled.div`
+  display: flex;
+  justify-content: space-between;
+ width: 100%;
+`;
+
+
 export const DivResume = styled.div`
   display: flex;
+  width: 90%;
   justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -94,7 +102,6 @@ export const DivPresentation = styled.div`
   }
 `;
 
-export const DivVacuum = styled.div``;
 
 export const HelloText = styled.p`
   font-weight: 500;

@@ -45,13 +45,12 @@ export default function Main() {
 
       <S.DivCompany>
         <S.DivContentCompany>
-          <S.CompanyTwo />
+          <S.CompanyThree />
           <div>
             <S.CompanyText>L2 Code 2022-Moment</S.CompanyText>
             <S.TextDescription>
-              During the period I interned i worked on a project with React,
-              Styled <br />
-              Components and Typescript, I also improved my knowledge in CSS.
+              I am working on projects with React with Styled Components,
+              TypeScript, API implementation, NextJS, and also work with emails
             </S.TextDescription>
           </div>
         </S.DivContentCompany>

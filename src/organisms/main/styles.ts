@@ -1,6 +1,7 @@
 import styled from "styled-components";
 const companyone = require("../../assets/company1.png") as string;
 const companytwo = require("../../assets/company2.png") as string;
+const companythree = require("../../assets/company3.png") as string;
 export const Container = styled.section`
   margin-top: 100px;
 `;
@@ -107,6 +108,10 @@ export const CompanyOne = styled.img.attrs({ src: companyone })`
 `;
 
 export const CompanyTwo = styled.img.attrs({ src: companytwo })`
+  width: 130px;
+  height: 132px;
+`;
+export const CompanyThree = styled.img.attrs({ src: companythree })`
   width: 130px;
   height: 132px;
 `;
