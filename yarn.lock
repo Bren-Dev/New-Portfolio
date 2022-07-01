@@ -1163,6 +1163,13 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@formspark/use-formspark@^0.1.39":
+  version "0.1.39"
+  resolved "https://registry.npmjs.org/@formspark/use-formspark/-/use-formspark-0.1.39.tgz#155af2f5f587d754e1541519e3d69691823770a8"
+  integrity sha512-3bIhw3z1eUzMXStgM3/WNNkjYuodk0PSrgrR3cQpCYifGmzkgRuy6mduCetqYK4vsTEaQO2RWFjNOK0eUEDGOQ==
+  dependencies:
+    whatwg-fetch "^3.6.2"
+
 "@formspree/core@^2.6.3":
   version "2.6.4"
   resolved "https://registry.npmjs.org/@formspree/core/-/core-2.6.4.tgz"

@@ -6,7 +6,6 @@ import { HtmlIcon } from "../../assets/icons/html";
 import { CssIcon } from "../../assets/icons/css";
 import { JavaScriptIcon } from "../../assets/icons/js";
 import { ReactIcon } from "../../assets/icons/react";
-import { NodeIcon } from "../../assets/icons/node";
 
 import * as S from "./styles";
 import { GithubIcon } from "../../assets/icons/github";
@@ -94,12 +93,6 @@ export default class SimpleSlider extends Component {
             </S.Skill>
           </div>
 
-          <div>
-            <S.Skill>
-              <NodeIcon />
-              <p>NodeJS</p>
-            </S.Skill>
-          </div>
           <div>
             <S.Skill>
               <GitIcon />

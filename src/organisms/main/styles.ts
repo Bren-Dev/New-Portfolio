@@ -2,7 +2,7 @@ import styled from "styled-components";
 const companyone = require("../../assets/company1.png") as string;
 const companytwo = require("../../assets/company2.png") as string;
 export const Container = styled.section`
-  margin-top: 150px;
+  margin-top: 100px;
 `;
 
 export const DivImage = styled.div`

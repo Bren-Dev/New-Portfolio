@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const DivRectangle = styled.div`
   @media (max-width: 600px) {
-    display: none;
+    svg{width:300px;}
   }
 `;
 

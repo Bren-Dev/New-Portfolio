@@ -1,7 +1,22 @@
 import ElementSpacial from "../../assets/icons/elementSpacial";
 import EmailIcon from "../../assets/icons/email";
 import * as S from "./styles";
+import React, { useState } from "react";
+import { useFormspark } from "@formspark/use-formspark";
+
 export default function Footer() {
+  const [submit, submitting] = useFormspark({
+    formId: "BzHwsPBB",
+  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const onSubmit = async (e: any) => {
+    e.preventDefault();
+    await submit({ name, message });
+    alert("Form submitted");
+  };
+
   return (
     <S.Container>
       <S.ContentDivForm>
@@ -11,8 +26,8 @@ export default function Footer() {
 
             <p>
               I’m very approachable and would love to speak to you. Feel free to
-              call, send me an email . Follow me in social media or simply
-              complete the enquiry form.
+              send me an email. Follow me in social media or simply complete the
+              enquiry form.
             </p>
             <S.DivEmail>
               <EmailIcon />
@@ -21,15 +36,26 @@ export default function Footer() {
           </S.DivTouch>
           <S.DivMessage>
             <h1>Send me a message</h1>
-            <form>
-              <input placeholder="Name" type="text" />
-              <input placeholder="Email Adress" type="text" />
-              <input placeholder="Subject" type="text" />
-              <input placeholder="Your Message" type="text" />
+            <form id="formMessage" onSubmit={onSubmit}>
+              <input
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                placeholder="E-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                placeholder="Your Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+              <button type="submit" disabled={submitting}>
+                Send
+              </button>
             </form>
-            <S.DivButton>
-              <button>Send Message</button>
-            </S.DivButton>
           </S.DivMessage>
         </S.DivForm>
       </S.ContentDivForm>

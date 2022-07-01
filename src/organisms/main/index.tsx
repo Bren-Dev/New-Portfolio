@@ -5,7 +5,7 @@ import * as S from "./styles";
 export default function Main() {
   return (
     <S.Container>
-      <S.DivAbout>
+      <S.DivAbout id="About">
         <S.AboutText>about.</S.AboutText>
         <S.TextDescription>
           Technology, innovation and design. <br />
@@ -34,6 +34,20 @@ export default function Main() {
           <S.CompanyTwo />
           <div>
             <S.CompanyText>Very Solutions 2021-2021</S.CompanyText>
+            <S.TextDescription>
+              During the period I interned i worked on a project with React,
+              Styled <br />
+              Components and Typescript, I also improved my knowledge in CSS.
+            </S.TextDescription>
+          </div>
+        </S.DivContentCompany>
+      </S.DivCompany>
+
+      <S.DivCompany>
+        <S.DivContentCompany>
+          <S.CompanyTwo />
+          <div>
+            <S.CompanyText>L2 Code 2022-Moment</S.CompanyText>
             <S.TextDescription>
               During the period I interned i worked on a project with React,
               Styled <br />

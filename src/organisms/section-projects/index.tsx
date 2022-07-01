@@ -39,7 +39,7 @@ export default function Projects() {
         </S.DivStudies>
       </S.ContentEducation>
 
-      <S.ContentProjects>
+      <S.ContentProjects id="Work">
         <div>
           <S.TextProject>My recent work</S.TextProject>
           <S.DivWork>

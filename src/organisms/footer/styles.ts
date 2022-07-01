@@ -2,9 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 export const ContentDivForm = styled.div`
   display: flex;
@@ -15,12 +12,16 @@ export const ContentDivForm = styled.div`
   width: 70%;
   @media (max-width: 768px) {
     position: static;
+    margin-left:10vw;
   }
 `;
 export const DivFinal = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 768px) {
+   display:none;
+  }
 `;
 
 export const DivForm = styled.div`
@@ -28,7 +29,6 @@ export const DivForm = styled.div`
   backdrop-filter: blur(20px);
   opacity: 0.9;
   border-radius: 30px;
-
   height: 600px;
   margin-top: 20vh;
   display: flex;
@@ -56,22 +56,19 @@ export const DivForm = styled.div`
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
     border-radius: 10px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-
     font-weight: 400;
     font-size: 15px;
     line-height: 21px;
     color: #ffffff;
+    @media (max-width: 1024px) {
+    width: 140px;
   }
-  @media (max-width: 768px) {
-    flex-direction: column;
-    background: none;
   }
+
+  @media (max-width: 1024px) {
+    justify-content:center;
+  }
+
 `;
 
 export const DivTouch = styled.div`
@@ -79,6 +76,9 @@ export const DivTouch = styled.div`
   flex-direction: column;
   align-items: center;
   width: 50%;
+  @media (max-width: 1024px) {
+    display:none;
+  }
 `;
 
 export const DivEmail = styled.div`
@@ -92,13 +92,6 @@ export const DivEmail = styled.div`
     color: #ffffff;
     margin-left: 20px;
   }
-`;
-
-export const DivButton = styled.div`
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-start;
-  width: 60%;
 `;
 
 export const DivMessage = styled.div`
