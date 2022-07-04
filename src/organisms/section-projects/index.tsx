@@ -1,6 +1,6 @@
-import RectangleIcon from "../../assets/icons/rectangle";
-import StudiesIcon from "../../assets/icons/studies";
-import CarouselWork from "../../components/carouselWork";
+import RectangleIcon from "assets/icons/rectangle";
+import StudiesIcon from "assets/icons/studies";
+import CarouselWork from "components/carouselWork";
 import * as S from "./styles";
 export default function Projects() {
   return (

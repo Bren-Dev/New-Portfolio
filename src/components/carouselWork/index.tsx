@@ -32,41 +32,38 @@ export default class CarouselWork extends Component {
         },
       ],
     };
+
+    const work = [
+      {
+        hr: "https://teste-bren-dev.vercel.app/",
+        p: "Deliverize",
+        img: <S.ProjectOne />,
+      },
+      {
+        hr: "https://healthy-food-nu.vercel.app/",
+        p: "Healthy Food",
+        img: <S.ProjectTwo />,
+      },
+      {
+        hr: "https://landify-du1xqw6h6-bren-dev.vercel.app/",
+        p: "Landify",
+        img: <S.ProjectThree />,
+      },
+    ];
+
     return (
       <S.Container>
         <Slider {...settings}>
-          <a href="https://teste-bren-dev.vercel.app/">
-            <S.DivProject>
-              <S.DivImage>
-                <S.ProjectOne />
-              </S.DivImage>
-              <S.DivTitle>
-                <p>Deliverize</p>
-              </S.DivTitle>
-            </S.DivProject>
-          </a>
-
-          <a href="https://healthy-food-nu.vercel.app/">
-            <S.DivProject>
-              <S.DivImage>
-                <S.ProjectTwo />
-              </S.DivImage>
-              <S.DivTitle>
-                <p>Healthy Food</p>
-              </S.DivTitle>
-            </S.DivProject>
-          </a>
-
-          <a href="https://landify-du1xqw6h6-bren-dev.vercel.app/">
-            <S.DivProject>
-              <S.DivImage>
-                <S.ProjectThree />
-              </S.DivImage>
-              <S.DivTitle>
-                <p>Landify</p>
-              </S.DivTitle>
-            </S.DivProject>
-          </a>
+          {work.map((w) => (
+            <a href={w.hr}>
+              <S.DivProject>
+                <S.DivImage>{w.img}</S.DivImage>
+                <S.DivTitle>
+                  <p>{w.p}</p>
+                </S.DivTitle>
+              </S.DivProject>
+            </a>
+          ))}
         </Slider>
       </S.Container>
     );
