@@ -1,8 +1,8 @@
 import React from "react";
-import { LinkedinIcon } from "../../assets/icons/linkedin";
+import { LinkedinIcon } from "assets/icons/linkedin";
 import { useTypewriter } from "react-simple-typewriter";
 import * as S from "./styles";
-import { GithubIconTwo } from "../../assets/icons/githubTwo";
+import { GithubIconTwo } from "assets/icons/githubTwo";
 import { DivVacuum } from "../main/styles";
 
 export default function Header() {
@@ -13,14 +13,19 @@ export default function Header() {
     deleteSpeed: 5,
     typeSpeed: 200,
   });
+  const element = [
+    { id: "Home", hr: "#Home" },
+    { id: "About", hr: "#About" },
+    { id: "Work", hr: "#Work" },
+  ];
   return (
     <S.Container>
       <S.Nav id="Home">
         <S.TextName>Brenda Dev</S.TextName>
         <S.ListHeader>
-          <S.ElementList href="#Home">Home</S.ElementList>
-          <S.ElementList href="#About">About</S.ElementList>
-          <S.ElementList href="#Work">Work</S.ElementList>
+          {element.map((e) => (
+            <S.ElementList href={e.hr}>{e.id}</S.ElementList>
+          ))}
         </S.ListHeader>
         <S.DivIcons>
           <a

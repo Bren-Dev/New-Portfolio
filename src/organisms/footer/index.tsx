@@ -1,12 +1,12 @@
-import ElementSpacial from "../../assets/icons/elementSpacial";
-import EmailIcon from "../../assets/icons/email";
+import ElementSpacial from "assets/icons/elementSpacial";
+import EmailIcon from "assets/icons/email";
 import * as S from "./styles";
 import React, { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
-
+const FORM_ID = "BzHwsPBB";
 export default function Footer() {
   const [submit, submitting] = useFormspark({
-    formId: "BzHwsPBB",
+    formId: FORM_ID,
   });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

@@ -2,21 +2,20 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { HtmlIcon } from "../../assets/icons/html";
-import { CssIcon } from "../../assets/icons/css";
-import { JavaScriptIcon } from "../../assets/icons/js";
-import { ReactIcon } from "../../assets/icons/react";
-
+import { HtmlIcon } from "assets/icons/html";
+import { CssIcon } from "assets/icons/css";
+import { JavaScriptIcon } from "assets/icons/js";
+import { ReactIcon } from "assets/icons/react";
 import * as S from "./styles";
-import { GithubIcon } from "../../assets/icons/github";
-import { PythonIcon } from "../../assets/icons/python";
-import { TypescriptIcon } from "../../assets/icons/typescript";
-import { LinuxIcon } from "../../assets/icons/linux";
-import { SassIcon } from "../../assets/icons/sass";
-import { MysqlIcon } from "../../assets/icons/mysql";
-import { PostgresIcon } from "../../assets/icons/postgres";
-import { GitIcon } from "../../assets/icons/git";
-import { CppIcon } from "../../assets/icons/cpp";
+import { GithubIcon } from "assets/icons/github";
+import { PythonIcon } from "assets/icons/python";
+import { TypescriptIcon } from "assets/icons/typescript";
+import { LinuxIcon } from "assets/icons/linux";
+import { SassIcon } from "assets/icons/sass";
+import { MysqlIcon } from "assets/icons/mysql";
+import { PostgresIcon } from "assets/icons/postgres";
+import { GitIcon } from "assets/icons/git";
+import { CppIcon } from "assets/icons/cpp";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -53,88 +52,32 @@ export default class SimpleSlider extends Component {
         },
       ],
     };
+    const skill = [
+      { ic: <HtmlIcon />, p: "HTML" },
+      { ic: <CssIcon />, p: "CSS" },
+      { ic: <JavaScriptIcon />, p: "JavaScript" },
+      { ic: <TypescriptIcon />, p: "TypeScript" },
+      { ic: <SassIcon />, p: "Sass" },
+      { ic: <ReactIcon />, p: "React" },
+      { ic: <GitIcon />, p: "Git" },
+      { ic: <GithubIcon />, p: "Github" },
+      { ic: <PythonIcon />, p: "Python" },
+      { ic: <CppIcon />, p: "C++" },
+      { ic: <LinuxIcon />, p: "Linux" },
+      { ic: <MysqlIcon />, p: "SQL" },
+      { ic: <PostgresIcon />, p: "Postgresql" },
+    ];
     return (
       <S.Container>
         <Slider {...settings}>
-          <div>
-            <S.Skill>
-              <HtmlIcon />
-              <p>HTML</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <CssIcon />
-              <p>CSS</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <JavaScriptIcon />
-              <p>JavaScript</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <TypescriptIcon />
-              <p>TypeScript</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <SassIcon />
-              <p>Sass</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <ReactIcon />
-              <p>React</p>
-            </S.Skill>
-          </div>
-
-          <div>
-            <S.Skill>
-              <GitIcon />
-              <p>Git</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <GithubIcon />
-              <p>Github</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <PythonIcon />
-              <p>Python</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <CppIcon />
-              <p> c++</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <LinuxIcon />
-              <p>Linux</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <MysqlIcon />
-              <p>SQL</p>
-            </S.Skill>
-          </div>
-          <div>
-            <S.Skill>
-              <PostgresIcon />
-              <p>Postgresql</p>
-            </S.Skill>
-          </div>
+          {skill.map((s) => (
+            <div>
+              <S.Skill>
+                {s.ic}
+                <p>{s.p}</p>
+              </S.Skill>
+            </div>
+          ))}
         </Slider>
       </S.Container>
     );

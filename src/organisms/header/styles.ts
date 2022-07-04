@@ -33,6 +33,9 @@ export const ListHeader = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
+  p{
+    color:white;
+  }
 `;
 
 export const ElementList = styled.a`
