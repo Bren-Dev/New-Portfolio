@@ -8,9 +8,9 @@ export default function Main() {
       id: "Ibyte 2020-2021",
       img: <S.CompanyOne />,
       desc: `   I worked organizing the electronic devices in the necessary
-    sectors, made <br /> price printing and updated the campaigns,
-    also assisted the computer <br /> technician with formatting in
-    computers, external / internal cleaning and <br /> whatever was
+    sectors, made price printing and updated the campaigns,
+    also assisted the computer technician with formatting in
+    computers, external / internal cleaning and whatever was
     necessary.`,
     },
     {
